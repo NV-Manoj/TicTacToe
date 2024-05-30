@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #5bb9e5;
+  box-sizing: border-box;
+}
+.message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-decoration: underline green;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 10%;
+}
+
+#gameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  height: 20rem;
+  width: 20rem;
+  gap: 1rem;
+  margin: 10%;
+}
+
+.inputBox {
+  border: none;
+  box-shadow: 3px 3px 10px black;
+  border-radius: 15px 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(47, 216, 0);
+}
+
+#newGame,
+#restart {
+  padding: 15px 30px;
+  background-color: rgb(40, 131, 1);
+  border: 2px solid rgb(0, 255, 234);
+  border-radius: 18px;
+  font-size: 19px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px 7px black;
+  cursor: pointer;
+}
+
+/* button {
+  position: relative;
+  border: none;
+  transition: .4s ease-out;
+  z-index: 1;
+}
+button::before,
+button::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+
+#newGame:hover {
+  box-shadow: inset -10.5em 0 0 0 #e8ce39, inset 10.5em 0 0 0 #ff96ad;
+} */
+
+#newGame {
+  margin-bottom: 15%;
+}
+
+.hide {
+  display: none;
+}
+
+#showResult {
+  font-size: 30px;
+  margin-top: 20%;
+}
